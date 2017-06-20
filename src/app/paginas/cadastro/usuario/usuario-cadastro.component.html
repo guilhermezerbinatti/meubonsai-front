@@ -1,0 +1,33 @@
+<h1>
+    Usuário
+</h1>
+<form class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label>Nome</label>
+                <input [(ngModel)]="usuario.nome" type="text" class="form-control" placeholder="Nome" name="nome">
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <fieldset class="form-group">
+                <label>E-mail</label>
+                <input [(ngModel)]="usuario.email" type="email" class="form-control" placeholder="email@mail.com" name="email">
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+            <fieldset class="form-group">
+                <label>Senha</label>
+                <input [(ngModel)]="usuario.senha" type="password" class="form-control" placeholder="sua senha" name="email">
+            </fieldset>
+        </div>
+    </div>
+
+    <div>
+        <button (click)="salvar();" class="btn btn-success">Salvar</button>
+        <button class="btn btn-danger">Limpar</button>
+    </div>
+</form>

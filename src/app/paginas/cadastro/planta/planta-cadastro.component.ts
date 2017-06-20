@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./planta-cadastro.component.scss']
 })
 export class PlantaCadastroComponent implements OnInit {
-        _id: string;
+    _id: string;
     nome: string;
     nomeCientifico: string;
     familia: string;

@@ -7,7 +7,8 @@ const routes: Routes = [
         path: '', component: PaginaComponent,
         children: [
             { path: 'dashboard', loadChildren: '../layout/dashboard/dashboard.module#DashboardModule' },
-            { path: 'planta', loadChildren: '../paginas/cadastro/planta/planta-cadastro.module#PlantaCadastroModule' }
+            { path: 'planta', loadChildren: '../paginas/cadastro/planta/planta-cadastro.module#PlantaCadastroModule' },
+            { path: 'usuario', loadChildren: '../paginas/cadastro/usuario/usuario-cadastro.module#UsuarioCadastroModule' }
         ]
     }
 ];
