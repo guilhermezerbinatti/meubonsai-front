@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PlantaCadastroComponent } from './planta-cadastro.component';
 
 const routes: Routes = [
-    { path: '', component: PlantaCadastroComponent }
+    { path: 'paginas', component: PlantaCadastroComponent }
 ];
 
 @NgModule({

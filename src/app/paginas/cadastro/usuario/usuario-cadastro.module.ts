@@ -4,15 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { UsuarioCadastroRoutingModule } from './usuario-cadastro-routing.module';
 import { UsuarioCadastroComponent } from './usuario-cadastro.component';
-import { PageHeaderModule } from '../../../shared';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        UsuarioCadastroRoutingModule,
-        PageHeaderModule
+        UsuarioCadastroRoutingModule
     ],
     declarations: [UsuarioCadastroComponent]
 })

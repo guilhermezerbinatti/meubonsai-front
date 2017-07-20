@@ -7,10 +7,13 @@ import {TranslateService} from '@ngx-translate/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
+    usuario: string;
     constructor(private translate: TranslateService) { }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.usuario = localStorage.getItem('usuario');
+
+    }
 
     toggleSidebar() {
         const dom: any = document.querySelector('body');

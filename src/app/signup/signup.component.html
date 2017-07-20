@@ -1,26 +1,34 @@
 <div class="login-page">
     <div class="row">
         <div class="col-md-4 push-md-4">
-            <img class="user-avatar" src="assets/images/logo.png" width="150px" />
-            <h1>SB Admin BS4 Angular4</h1>
-            <form role="form">
+            <img class="user-avatar" src="assets/images/arvore_icone.png" width="150px" />
+            <h1>Meu Bonsai</h1>
+            <form role="form" (submit)="registar($event)">
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Full Name">
+                        <input type="text" [(ngModel)]="usuario.nome" class="form-control input-underline input-lg" id="nome" name="nome" placeholder="Nome Completo">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control input-underline input-lg" id="" placeholder="Email">
+                        <input type="text" [(ngModel)]="usuario.login" class="form-control input-underline input-lg" id="lohin" name="login" placeholder="Login de Acesso">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+                        <input type="text" [(ngModel)]="usuario.email" class="form-control input-underline input-lg" id="email" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" [(ngModel)]="usuario.telefone" class="form-control input-underline input-lg" id="telefone" name="telefone" placeholder="telefone">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" [(ngModel)]="usuario.senha" class="form-control input-underline input-lg" id="senha" name="senha" placeholder="senha">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Repeat Password">
+                        <input type="password" [(ngModel)]="senhaConfirmar" class="form-control input-underline input-lg" id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']"> Register </a>&nbsp;
+                <button class="btn rounded-btn">Cadastrar</button>
                 <a class="btn rounded-btn" [routerLink]="['/login']"> Log in </a>
             </form>
         </div>

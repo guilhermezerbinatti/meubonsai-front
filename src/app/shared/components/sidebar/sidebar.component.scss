@@ -1,4 +1,4 @@
-$topnav-background-color: #1E824C;
+$topnav-background-color: #00B16A;
 .sidebar {
     border-radius: 0;
     position: fixed;
@@ -21,6 +21,7 @@ $topnav-background-color: #1E824C;
     transition: all 0.2s ease-in-out;
     // border-top: 1px solid rgba(255,255,255,0.3);
     .list-group {
+        margin-top: 10px;
         a.list-group-item {
             background: $topnav-background-color;
             border: 0;
@@ -69,7 +70,6 @@ $topnav-background-color: #1E824C;
             background: darken($topnav-background-color, 5%);
         }
         .panel-collapse {
-            border-radious: 0;
             border: none;
             .panel-body {
                 .list-group-item {

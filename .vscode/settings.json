@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "workbench.colorTheme": "Dark++",
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "off",
+    "editor.tabCompletion": true
+}
